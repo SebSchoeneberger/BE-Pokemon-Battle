@@ -6,6 +6,15 @@ const leaderboardSchema = new Schema({
         type: String,
         required: true,
     },
+    country: {
+        type: String,
+    },
+    favPokemon: {
+        type: String,
+    },
+    avatar: {
+        type: String,
+    },
     score: {
         type: Number,
         required: true,
