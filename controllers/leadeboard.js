@@ -25,3 +25,11 @@ export const createScore = asyncHandler(async (req, res, next) => {
   }
   
 });
+
+export const getUser = asyncHandler( async (req, res, next) =>{
+
+  const { username } = req.body;
+
+  const user = await Leaderboard.findOne({ username });
+  res.json(user);
+})
