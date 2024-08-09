@@ -9,6 +9,6 @@ leaderboardRouter.route('/')
     .get(getLeaderboard)
     .post(validateJOI(leaderboardJoiSchema), createScore);
 
-leaderboardRouter.route('/user').get(getUser)
+leaderboardRouter.route('/user').post(getUser)
 
 export default leaderboardRouter;
